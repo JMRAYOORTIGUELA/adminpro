@@ -6,7 +6,7 @@ import {
   OnInit,
   EventEmitter,
   ElementRef
-} from '@angular/core';
+} from "@angular/core";
 
 @Component({
   selector: "app-incrementador",
