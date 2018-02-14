@@ -6,20 +6,20 @@ import {
   OnInit,
   EventEmitter,
   ElementRef
-} from "@angular/core";
+} from '@angular/core';
 
 @Component({
-  selector: "app-incrementador",
-  templateUrl: "./incrementador.component.html",
+  selector: 'app-incrementador',
+  templateUrl: './incrementador.component.html',
   styles: []
 })
 export class IncrementadorComponent implements OnInit {
-  @ViewChild("txtProgress") txtProgress: ElementRef;
+  @ViewChild('txtProgress') txtProgress: ElementRef;
 
-  @Input("nombre") leyenda: string = "Leyenda";
+  @Input('nombre') leyenda: string = 'Leyenda';
   @Input() progreso: number = 50;
 
-  @Output("actualizaValor")
+  @Output('actualizaValor')
   cambioValor: EventEmitter<number> = new EventEmitter();
 
   constructor() {
